@@ -1,0 +1,10 @@
+.section {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly translate down */
+  transition: opacity 1s ease, transform 2s ease; /* Transition for opacity and transform */
+}
+
+.section.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}

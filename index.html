@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/pna.png" sizes="16x16" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/32b932f7d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="scrollanimate.css">
+
+
+    <title>Podcast Network Asia</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="images/pna.png" alt="logo" width="80px">
+        </div>
+
+        <nav>
+            <ul class="navigation" id="menu">
+                <li>About Us</li>
+                <li>Our Services</li>
+                <li onclick="openPopup()">Contact</li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <video autoplay loop muted class="background-video">
+            <source src="images/podcastvid2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay"></div> <!-- Overlay div -->
+
+        <div class="content-left">
+            <p class="main-heading">The pioneer podcast network in Southeast Asia, amplifying voices for the past 5+
+                years</p>
+
+            <h2>The easiest way to enhance and expand your <span class="spanh2">podcast</span></h2>
+            <p>Expanding your podcast doesn’t have to be challenging. We’ll handle the details so you can focus on the
+                enjoyable parts and sound like a pro
+            </p>
+            <button class="generic-btn" id=mainBtn onclick="openPopup()">Learn More</button>
+        </div>
+        <!-- 
+        <div class="content-right">
+            <div class="content-right-box"></div>
+            <img src="images/microphone.jpg" class="hero-img" alt="">
+        </div> -->
+    </main>
+
+
+
+    <!-- <div class="services">
+        <h2>our services</h2>
+        <p class="container-desc">Our comprehensive suite of services is designed to help businesses like yours build,
+            grow,
+            and establish a strong brand presence in the digital world.</p>
+
+        <div class="services-content">
+            <div class="services-content-right">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active">
+                            <img src="podcastimg/esquire.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="podcastimg/asia.jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="podcastimg/camp confidence.jpg" alt="Image 3">
+                        </div>
+                        <div class="slide">
+                            <img src="podcastimg/camp confidence.jpg" alt="Image 3">
+                        </div>
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="services-content-left">
+                <h1>Listen to their Podcast!</h1>
+                <h1> Esquire Sessions Live</h1>
+                <div class="spotify-link">
+                    <img src="path/to/spotify-icon.png" class="icon">
+                    <span>SpotifyChatGPT</span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <div class="about-section-container">
+        <div class="about-sec section">
+            <div class="one">
+                <div class="one-content">
+                    <img src="images/manpodcast.jpg" alt="">
+                    <img src="images/woman.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="two">
+                <div class="two-content">
+                    <img src="images/podcastsesh.jpg" width="400px">
+                </div>
+            </div>
+            <div class="three">
+                <div class="three-content">
+                    <h3>About Our Company</h3>
+                    <h1>
+                        Podcast Network Asia</h1>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque
+                        nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur
+                        blandit tempus porttitor.</p>
+                </div>
+
+                <div class="three-subcontent">
+                    <div class="three-subcontent-items">
+                        <div class="icon-and-text">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <span>48 Hours Return Output</span>
+                        </div>
+                        <div class="icon-and-text">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <span>Expert Editing Team</span>
+                        </div>
+                        <div class="icon-and-text">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <span>Customizable Packages</span>
+                        </div>
+                        <div class="icon-and-text">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <span>High-Quality Audio Standards</span>
+                        </div>
+                        <!-- 
+                        <div class="icon-and-text">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <span>Show Insights</span>
+                        </div>
+
+
+                        <div class="icon-and-text">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <span>Show Notes and Transcription</span>
+                        </div> -->
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="choose-section">
+        <div class="container section">
+            <div class="company-highlights highlights-content">
+                <img src="images/highlightsimg/partner.png" alt="administrative task" width="70px" height="70px">
+                <h2>430+</h2>
+                <h4>Partnered shows</h4>
+            </div>
+            <div class="company-highlights highlights-content">
+                <img src="images/highlightsimg/experience.png" alt="administrative task" width="70px" height="70px">
+                <h2>5+</h2>
+                <h4>Years of Experience</h4>
+            </div>
+            <div class="company-highlights highlights-description">
+
+                <h2 class="title">We're Sparking the Audio Revolution in Podcasting Solutions.</h2>
+                <p>Our podcasting expertise is reaching new heights. With exceptional service quality, we guarantee
+                    repeat engagements from delighted clients. Our committed team expertly curates your audio content,
+                    keeping it polished and professional. Trust us for excellence every step of the way. We prioritize
+                    sustainable practices, ensuring your podcasting journey is both impactful and eco-friendly. Join us
+                    as we explore the possibilities together. Discover the power of our innovative podcasting solutions
+                    today. Contact us now to see how we can elevate your brand's audio presence!</p>
+                <!-- <button class="generic-btn" onclick="openPopup()">Contact</button> -->
+            </div>
+            <div class="company-highlights highlights-content">
+                <img src="images/highlightsimg/satisfied.png" alt="administrative task" width="70px" height="70px">
+                <h2>440+</h2>
+                <h4>Satisfied Customers</h4>
+
+            </div>
+            <div class="company-highlights highlights-content">
+                <img src="images/highlightsimg/sales.png" alt="administrative task" width="70px" height="70px">
+                <h2>40+</h2>
+                <h4>Increase Partner Sales</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="blog-section section">
+        <h2>Our Latest Articles</h2>
+        <p class="container-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem accusamus
+            doloremque nostrum
+            quas eum rem molestias corrupti, illum veritatis id assumenda sequi cupiditate asperiores tempore
+            pariatur accusantium iste sunt suscipit?</p>
+        <div class="container-flex">
+            <div class="card card2" style="width: 18rem;">
+                <img class="card-img-top" src="images/podcastassets/pexels-george-milton-6953672.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">The Motivated Mind: Meet and greet</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="read-more-article">Read More</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <img class="card-img-top" src="images/podcastassets/pexels-foteros-352505.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">KoolPals: Abangan our Special Guest!</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="read-more-article">Read More</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <img class="card-img-top" src="images/podcastassets/pexels-george-milton-6953867.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Pareng Hayb finally meets Jam!</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="read-more-article">Read More</a>
+                </div>
+            </div>
+            <div class="card card2" style="width: 18rem;">
+                <img class="card-img-top" src="images/podcastassets/pexels-rdne-4910553.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Hustle Hard by Chinkee Tan</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="read-more-article">Read More</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="read-more">
+            <button type="button" class="btn btn-primary read-more-btn">Read More</button>
+        </div>
+
+    </div>
+
+
+    <div class="pricing section">
+        <div class="pricing8 py-5">
+            <div class="container-pricing">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h3 class="mb-3" style="color:#f57359 ">Affordable Solutions for Enhanced Productivity</h3>
+                        <h6 class="subtitle font-weight-normal">We guarantee your satisfaction with our services.
+                        </h6>
+                    </div>
+                </div>
+                <!-- row  -->
+                <div class="row mt-4 rowconfig">
+                    <!-- column  -->
+                    <div class="col-6 col-sm-4 col-md-2 col-lg-3 ml-auto pricing-box align-self-center">
+                        <div class="card  mb-4">
+                            <div class="card-body card-config p-4 text-center">
+                                <h5 class="font-weight-normal">Videogram Plan</h5>
+                                <sup>$</sup><span class="text-dark display-5">49.99</span>
+                                <h6 class="font-weight-light font-14">MONTHLY</h6>
+                                <p class="mt-4">Perfect for podcasters who want to repurpose video content and market
+                                    their podcast shows on Tiktok, Instagram, and YouTube</p>
+                                <ul class="mt-4 plan-inclusion">
+                                    <li>Enjoy up to (4) four video snippets</li>
+                                    <li>Combination of Tiktok, Instagram Reels or YouTube Shorts for your podcast show
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a class="btn btn-info-gradiant p-3 btn-block border-0 text-white" href="#">CHOOSE PLAN </a>
+                        </div>
+                    </div>
+                    <!-- column  -->
+                    <!-- column  -->
+                    <div class="col-6 col-sm-4 col-md-2 col-lg-3 ml-auto pricing-box align-self-center">
+                        <div class="card  mb-4">
+                            <div class="card-body card-config p-4 text-center">
+                                <h5 class="font-weight-normal">Basic Plan</h5>
+                                <sup>$</sup><span class="text-dark display-5">149.99</span>
+                                <h6 class="font-weight-light font-14">MONTHLY</h6>
+                                <p class="mt-4 tex">Ideal for podcasters who need routine podcast production and growth
+                                    for
+                                    their shows</p>
+                                <ul class="mt-4 plan-inclusion">
+                                    <li>4 Professionally edited podcast episodes per month</li>
+                                    <li>24/7 Dedicated Podcast Managers
+                                    </li>
+                                    <li>Premium Podcast Hosting
+                                    </li>
+                                    <li>48 Hour Turnaround Time
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a class="btn btn-info-gradiant p-3 btn-block border-0 text-white" href="#">CHOOSE PLAN
+                            </a>
+                        </div>
+                    </div>
+                    <!-- column  -->
+                    <!-- column  -->
+                    <div class="col-6 col-sm-4 col-md-2 col-lg-3 ml-auto pricing-box align-self-center">
+                        <div class="card  mb-4">
+                            <div class="card-body card-config p-4 text-center">
+                                <h5 class="font-weight-normal">Pro Plan</h5>
+                                <sup>$</sup><span class="text-dark display-5">349.99</span>
+                                <h6 class="font-weight-light font-14">MONTHLY</h6>
+                                <p class="mt-4">Ideal for aspiring podcasters who need help in conceptualizing,
+                                    producing & releasing shows</p>
+                                <ul class="mt-4 plan-inclusion">
+                                    <li>Everything in Basic</li>
+                                    <li>Audiograms
+                                    </li>
+                                    <li>Show Notes & Transcriptions</li>
+                                    <li>Sound Imaging (Intro & Outro Production)
+                                    </li>
+                                    <li>Podcast Trailer</li>
+                                    <li>Quote Cards
+                                    </li>
+                                    Episode and Cover Art Creation</li>
+                                    <li>Monthly Podcast Analytics Review
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger-gradiant p-3 btn-block border-0 text-white" href="#">CHOOSE PLAN
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2 col-lg-3 ml-auto pricing-box align-self-center">
+                        <div class="card   mb-4">
+                            <div class="card-body card-config p-4 text-center">
+                                <h5 class="font-weight-normal">Elite Plan</h5>
+                                <sup>$</sup><span class="text-dark display-5">599.99</span>
+                                <h6 class="font-weight-light font-14">MONTHLY</h6>
+                                <p class="mt-4">Ideal for busy podcasters who need end-to-end podcasting management for
+                                    scaling their shows</p>
+                                <ul class="mt-4 plan-inclusion">
+                                    <li>Everything in Pro</li>
+                                    <li>Video Podcasts Editing
+                                    </li>
+                                    <li>Videograms for Social Media Channels</li>
+                                    <li>Access to Recording Tools </li>
+                                    <li>Paywalled Content</li>
+                                    <li>Merchandising
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-info-gradiant p-3 btn-block border-0 text-white" href="#">CHOOSE PLAN </a>
+                        </div>
+                    </div>
+                    <!-- column  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-container section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Do you have a Free Trial?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes! We give 1 free episode credit for every podcaster that wants to try our product so you can
+                        experience the convenience of having Podmachine as your team. All you need to do is create an
+                        account now to avail of your free job order.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is included in the free trial?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes! We give 1 free episode credit for every podcaster that wants to try our product so you can
+                        experience the convenience of having Podmachine as your team. All you need to do is create an
+                        account now to avail of your free job order.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can you help setup our shows?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes! We can help you conceptualize, prepare, and launch your podcast paired with the best
+                        practices to give your podcast a high chance of success upon release.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        How can you help grow my show?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The best way to grow your podcast is to cross promote and market to other shows! We at
+                        Podmachine team, can help make it happen for you. Get the impressions you need now. Book a call
+                        here: https://calendly.com/podmachine/consultation
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        How long does it take for you to edit one episode?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We make sure that you'll be able to receive (1) one edited audio file within 48 hours from the
+                        date you set with us. When you file a job order, we ask basic podcast details that include your
+                        target release date.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                        Can you edit and produce video podcasts?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes we can! With our Pro and Elite subscription plans, we can repurpose your audio files and
+                        make it into a video podcast and host it in YouTube and other video channels you prefer. Learn
+                        more by booking a call now: https://calendly.com/podmachine/consultation
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                        What payment methods do you support?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We support all major credit cards! We’ll add options for you to transact via bank transfers and
+                        other payment methods soon.
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="popup" id="popupForm">
+        <div class="form-header">
+            <button id="closeBtn">X</button> <!-- Close button -->
+            <h2>Contact Us</h2>
+            <hr>
+        </div>
+
+        <form id="contactForm" method="post" action="send_email.php">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
+                    placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="f-item about">
+                <h3>About</h3>
+
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-crosshairs" style="color: #ffffff;"></i>
+                        11 CollyerQuay, #17-00, TheArcade,
+                        Singapore 049317
+                    </li>
+                    <li><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        +63 9161934</li>
+                    <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        support@podcastnetworkasia.com</li>
+                </ul>
+            </div>
+            <div class="f-item information">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Our Services</li>
+                    <li>Learn More</li>
+                    <li>Reach Out</li>
+                </ul>
+            </div>
+            <div class="f-item socialmedia">
+                <h3>Social Media</h3>
+
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="index.js"></script>
+    <script src="scrollanimate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
